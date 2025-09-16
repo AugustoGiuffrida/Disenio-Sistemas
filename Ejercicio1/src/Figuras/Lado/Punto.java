@@ -1,6 +1,18 @@
 package Figuras.Lado;
 
-public class Punto extends Lado{
-    int x;
-    int y;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@NoArgsConstructor
+@Getter
+@Setter
+public class Punto{
+   private int x;
+   private int y;
+
+   public Punto(int x, int y){
+       this.x = x;
+       this.y = y;
+   }
 }

@@ -16,11 +16,13 @@ import java.util.List;
 @Setter
 public abstract class Figura {
     private String nombre;
-    private List<Elipse> elipses = new ArrayList<>();
-    private List<Poligono> poligonos = new ArrayList<>();
+    private List<Elipse> elipses;
+    private List<Poligono> poligonos;
 
     public Figura(String nombre){
         this.nombre = nombre;
+        this.elipses = new ArrayList<>();
+        this.poligonos = new ArrayList<>();
     }
 
     public void agregarElipse(Elipse elipse){
