@@ -5,10 +5,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Sucursales {
+public class Sucursal {
     private String direccion;
 
-    public Sucursales(String direccion){
+    public Sucursal(String direccion){
         this.direccion = direccion;
     }
 }

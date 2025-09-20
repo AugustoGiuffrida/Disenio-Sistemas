@@ -5,10 +5,10 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Platos {
+public class Plato {
     private String nombre;
 
-    public Platos(String nombre){
+    public Plato(String nombre){
         this.nombre = nombre;
     }
 }
