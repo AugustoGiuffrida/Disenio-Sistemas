@@ -1,0 +1,24 @@
+package Persona;
+
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class Investigador extends Persona {
+    private String titulacion;
+    private List<ProyectoInvestigacion> proyectos = new ArrayList<>();
+
+    public void agregarProyecto(ProyectoInvestigacion p) {
+        if(!proyectos.contains(p)){
+            proyectos.add(p);
+        }
+    }
+}

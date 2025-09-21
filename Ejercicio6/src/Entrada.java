@@ -1,0 +1,18 @@
+import Persona.Celador;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+import java.util.ArrayList;
+import java.util.List;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Getter
+@Setter
+public class Entrada {
+    private int numero;
+    private Parque parque;
+    private List<Celador> celadores = new ArrayList<>();
+}
