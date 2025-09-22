@@ -1,3 +1,5 @@
+package Parque;
+
 import Persona.Celador;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

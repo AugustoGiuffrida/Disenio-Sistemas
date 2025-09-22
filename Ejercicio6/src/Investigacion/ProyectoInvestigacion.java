@@ -1,3 +1,5 @@
+package Investigacion;
+
 import Especie.Especie;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -9,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class ProyectoInvestigacion {
@@ -18,6 +19,14 @@ public class ProyectoInvestigacion {
     private LocalDate fechaInicio;
     private LocalDate fechaFin;
     private Map<Especie, String> especiesInvestigadas = new HashMap<>();
+
+    public ProyectoInvestigacion(String nombre, double presupuesto, LocalDate fechaInicio, LocalDate fechaFin) {
+        this.nombre = nombre;
+        this.presupuesto = presupuesto;
+        this.fechaInicio = fechaInicio;
+        this.fechaFin = fechaFin;
+        this.especiesInvestigadas = new HashMap<>();
+    }
 
     public void agregarEspecie(Especie e, String nota){
         especiesInvestigadas.put(e, nota);

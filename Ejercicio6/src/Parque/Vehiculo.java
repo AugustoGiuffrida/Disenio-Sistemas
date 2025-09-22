@@ -1,16 +1,15 @@
-import Persona.Persona;
+package Parque;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.time.LocalDate;
-
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
 @Setter
-public class RegistroVisita {
-    private Persona visitante;
-    private LocalDate fecha;
+public class Vehiculo {
+    private String tipo;
+    private String matricula;
 }

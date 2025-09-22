@@ -1,5 +1,6 @@
 package Persona;
 
+import Investigacion.ProyectoInvestigacion;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +16,11 @@ import java.util.List;
 public class Investigador extends Persona {
     private String titulacion;
     private List<ProyectoInvestigacion> proyectos = new ArrayList<>();
+
+    public Investigador(String dni, String nombre, String direccion, String telefono, String titulacion) {
+        super(dni, nombre, direccion, telefono);
+        this.titulacion = titulacion;
+    }
 
     public void agregarProyecto(ProyectoInvestigacion p) {
         if(!proyectos.contains(p)){

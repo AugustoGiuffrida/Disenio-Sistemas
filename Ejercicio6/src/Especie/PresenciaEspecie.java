@@ -1,3 +1,5 @@
+package Especie;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -7,7 +9,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @Getter
 @Setter
-public class Vehiculo {
-    private String tipo;
-    private String matricula;
+public class PresenciaEspecie {
+    private Especie especie;
+    private int numeroIndividuos;
 }

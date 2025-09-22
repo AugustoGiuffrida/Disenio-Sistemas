@@ -14,8 +14,14 @@ import java.util.List;
 @Getter
 @Setter
 public class Animal extends Especie {
-
     private Dieta dieta;
     private String periodoCelo;
     private List<Especie> come = new ArrayList<>();
+
+
+    public Animal(String nombreCientifico, String nombreVulgar, Dieta dieta, String periodoCelo) {
+        super(nombreCientifico, nombreVulgar);
+        this.dieta = dieta;
+        this.periodoCelo = periodoCelo;
+    }
 }

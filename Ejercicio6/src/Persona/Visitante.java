@@ -11,5 +11,9 @@ import lombok.Setter;
 @Setter
 public class Visitante extends Persona {
     private String email;
-    private String telefono;
+
+    public Visitante(String dni, String nombre, String direccion, String telefono, String email) {
+        super(dni, nombre, direccion, telefono);
+        this.email = email;
+    }
 }

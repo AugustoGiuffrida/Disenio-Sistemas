@@ -1,3 +1,6 @@
+package Parque;
+
+import Registro.RegistroAlojamiento;
 import enums.CategoriaAlojamiento;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -8,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 @NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
 public class Alojamiento {
@@ -17,6 +19,14 @@ public class Alojamiento {
     private CategoriaAlojamiento categoria;
     private List<RegistroAlojamiento> registros = new ArrayList<>();
     private List<Excursion> excursionesOrganizadas = new ArrayList<>();
+
+    public Alojamiento(String nombre, int capacidad, CategoriaAlojamiento categoria) {
+        this.nombre = nombre;
+        this.capacidad = capacidad;
+        this.categoria = categoria;
+        this.registros = new ArrayList<>();
+        this.excursionesOrganizadas = new ArrayList<>();
+    }
 
     public void registrarEstadia(RegistroAlojamiento r){
         registros.add(r);

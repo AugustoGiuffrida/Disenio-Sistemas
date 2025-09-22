@@ -1,9 +1,11 @@
 package enums;
 
 public enum CategoriaAlojamiento {
-    UNA,
-    DOS,
-    TRES,
-    CUATRO,
-    CINCO
+    TURISTICO,
+    CABANA,
+    HOTEL,
+    HOSTAL,
+    CAMPING,
+    REFUGIO
 }
+
